@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartoon Tea Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://img.freepik.com/free-vector/tea-time-concept-illustration_114360-3949.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .menu-box {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: white;
+        padding: 12px 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+      }
+
+      .subtitle {
+        color: #d6ffdf;
+      }
+
+      h1 {
+        color: white;
+        letter-spacing: 3px;
+      }
+
+      .btn-explore {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 25px;
+        background-color: #a6e3b4;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      /* SERVICES */
+      .services {
+        display: flex;
+      }
+
+      .service-item {
+        flex: 1;
+        padding: 60px 40px;
+        text-align: center;
+      }
+
+      .service-item h3 {
+        color: #6d8e3d;
+      }
+
+      .service-item.highlight {
+        background-color: #6d8e3d;
+        color: white;
+      }
+
+      .service-item.highlight h3 {
+        color: white;
+      }
+
+      /* PRODUCTS */
+      .products-section {
+        display: flex;
+        gap: 50px;
+        padding: 80px 10%;
+        background-color: #2c312e;
+        color: white;
+      }
+
+      .check-out {
+        font-family: "Dancing Script", cursive;
+        color: #94a842;
+        font-size: 28px;
+      }
+
+      .btn-inventory {
+        display: inline-block;
+        padding: 10px 25px;
+        border: 2px solid #94a842;
+        color: #94a842;
+        text-decoration: none;
+      }
+
+      .product-list {
+        display: flex;
+        gap: 30px;
+      }
+
+      .product-img img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .price {
+        color: #94a842;
+        font-weight: bold;
+      }
+
+      /* EXPLORE SERVICES */
+      .services-explore {
+        padding: 80px 10%;
+        background-color: #c7efbe;
+        text-align: center;
+      }
+
+      .explore-sub {
+        font-family: "Dancing Script", cursive;
+        color: #6d8e3d;
+        font-size: 30px;
+      }
+
+      .services-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .service-card {
+        max-width: 350px;
+        border: 3px solid #6d8e3d;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .card-img img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .card-info {
+        background-color: #6d8e3d;
+        color: white;
+        padding: 25px;
+      }
+
+      .btn-read-more {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 20px;
+        border: 2px solid white;
+        color: white;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .services,
+        .products-section,
+        .product-list,
+        .services-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="menu-box">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div>
+        <h3 class="subtitle">Over one hundred cartoon tea flavors</h3>
+        <h1>CUTE TEA WORLD</h1>
+        <a href="#" class="btn-explore">EXPLORE</a>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="service-item">
+        <h3>MADE WITH LOVE</h3>
+        <p>Every cup is drawn with care and passion.</p>
+      </div>
+
+      <div class="service-item highlight">
+        <h3>RELAXATION</h3>
+        <p>Enjoy peaceful cartoon moments with tea.</p>
+      </div>
+
+      <div class="service-item">
+        <h3>ENERGY</h3>
+        <p>Cute tea brings positive energy to your day.</p>
+      </div>
+    </div>
+
+    <section class="products-section">
+      <div>
+        <h3 class="check-out">Check Out</h3>
+        <h1>OUR PRODUCTS</h1>
+        <p>
+          Lovely illustrated tea cups, green tea, milk tea and more.
+        </p>
+        <a href="#" class="btn-inventory">INVENTORY</a>
+      </div>
+
+      <div class="product-list">
+        <div>
+          <div class="product-img">
+            <img
+              src="https://img.freepik.com/free-vector/cute-tea-cup-cartoon-illustration_138676-2476.jpg"
+            />
+          </div>
+          <h4>GREEN TEA</h4>
+          <span class="price">$3.99</span>
+        </div>
+
+        <div>
+          <div class="product-img">
+            <img
+              src="https://img.freepik.com/free-vector/cute-milk-tea-cartoon-illustration_138676-2458.jpg"
+            />
+          </div>
+          <h4>MILK TEA</h4>
+          <span class="price">$4.99</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-explore">
+      <h3 class="explore-sub">Explore</h3>
+      <h1>OUR SERVICES</h1>
+
+      <div class="services-container">
+        <div class="service-card">
+          <div class="card-img">
+            <img
+              src="https://img.freepik.com/free-vector/tea-shop-concept-illustration_114360-2447.jpg"
+            />
+          </div>
+          <div class="card-info">
+            <h4>Custom Cartoon Recipe</h4>
+            <a href="#" class="btn-read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card-img">
+            <img
+              src="https://img.freepik.com/free-vector/delivery-service-with-scooter-concept-illustration_114360-2611.jpg"
+            />
+          </div>
+          <div class="card-info">
+            <h4>Cartoon Delivery</h4>
+            <a href="#" class="btn-read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
